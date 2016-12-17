@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Xin WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Xin WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Xin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>505C546A1E059BAD00607FA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>505C547E1E059BAE00607FA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>505C54891E059BAE00607FA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>505C54921E059BAE00607FA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
