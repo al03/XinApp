@@ -348,11 +348,24 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = KCUGBDU8HN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 0;
+							};
+						};
 					};
 					505C54A11E059BAE00607FA3 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = KCUGBDU8HN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

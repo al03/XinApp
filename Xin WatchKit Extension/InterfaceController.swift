@@ -8,9 +8,11 @@
 
 import WatchKit
 import Foundation
+import HealthKit
 
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet var rateLabel: WKInterfaceLabel!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
