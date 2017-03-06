@@ -22,6 +22,7 @@
 		505C54AC1E059BAE00607FA3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54AB1E059BAE00607FA3 /* ExtensionDelegate.swift */; };
 		505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54AD1E059BAE00607FA3 /* NotificationController.swift */; };
 		505C54B01E059BAE00607FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505C54AF1E059BAE00607FA3 /* Assets.xcassets */; };
+		505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54C81E06822800607FA3 /* HeartReateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		505C54AD1E059BAE00607FA3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		505C54AF1E059BAE00607FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505C54B11E059BAE00607FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505C54C81E06822800607FA3 /* HeartReateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartReateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				505C54A91E059BAE00607FA3 /* InterfaceController.swift */,
+				505C54C81E06822800607FA3 /* HeartReateController.swift */,
 				505C54AB1E059BAE00607FA3 /* ExtensionDelegate.swift */,
 				505C54AD1E059BAE00607FA3 /* NotificationController.swift */,
 				505C54AF1E059BAE00607FA3 /* Assets.xcassets */,
@@ -467,6 +470,7 @@
 			files = (
 				505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */,
 				505C54AC1E059BAE00607FA3 /* ExtensionDelegate.swift in Sources */,
+				505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */,
 				505C54AA1E059BAE00607FA3 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

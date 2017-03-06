@@ -17,6 +17,25 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
+        let workoutConfiguration = HKWorkoutConfiguration()
+        workoutConfiguration.activityType = .running
+        workoutConfiguration.locationType = .unknown
+        
+        do {
+            let workoutSession = try HKWorkoutSession(configuration: workoutConfiguration)
+            
+            let healthStore = HKHealthStore()
+            healthStore.start(workoutSession)
+            
+            HeartReateController.reloadRootControllers(withNames: ["HeartReateController"], contexts: [workoutConfiguration])
+            
+        } catch  {
+            
+        }
+        
+        
+
+        
         // Configure interface objects here.
     }
     

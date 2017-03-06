@@ -23,6 +23,13 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--Heart Reate Controller-->
+        <scene sceneID="P2I-eU-1Kz">
+            <objects>
+                <controller id="1v2-Qk-Apv" customClass="HeartReateController" customModule="Xin_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="345"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
