@@ -23,6 +23,7 @@
 		505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54AD1E059BAE00607FA3 /* NotificationController.swift */; };
 		505C54B01E059BAE00607FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505C54AF1E059BAE00607FA3 /* Assets.xcassets */; };
 		6F56D78E07359574BD172B26 /* Pods_Xin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DFEBA72079A98B173609F7 /* Pods_Xin.framework */; };
+		505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54C81E06822800607FA3 /* HeartReateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		505C54B11E059BAE00607FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DFEBA72079A98B173609F7 /* Pods_Xin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505C54C81E06822800607FA3 /* HeartReateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartReateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				505C54A91E059BAE00607FA3 /* InterfaceController.swift */,
+				505C54C81E06822800607FA3 /* HeartReateController.swift */,
 				505C54AB1E059BAE00607FA3 /* ExtensionDelegate.swift */,
 				505C54AD1E059BAE00607FA3 /* NotificationController.swift */,
 				505C54AF1E059BAE00607FA3 /* Assets.xcassets */,
@@ -550,6 +553,7 @@
 			files = (
 				505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */,
 				505C54AC1E059BAE00607FA3 /* ExtensionDelegate.swift in Sources */,
+				505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */,
 				505C54AA1E059BAE00607FA3 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
