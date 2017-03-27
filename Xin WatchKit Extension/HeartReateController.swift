@@ -13,6 +13,7 @@ class HeartReateController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        guard let workoutConfiguration = context as? HKWorkoutConfigration else { return }
+        guard let workoutConfiguration = context as? HKWorkoutConfiguration else { return }
+        
     }
 }
