@@ -24,6 +24,7 @@
 		505C54B01E059BAE00607FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505C54AF1E059BAE00607FA3 /* Assets.xcassets */; };
 		505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54C81E06822800607FA3 /* HeartReateController.swift */; };
 		50AC6E4D1E7444F700374C0C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC6E4C1E7444F700374C0C /* HealthKit.framework */; };
+		A38199CE9151C40D0AD4C226 /* Pods_Xin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,10 +109,11 @@
 		505C54AD1E059BAE00607FA3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		505C54AF1E059BAE00607FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505C54B11E059BAE00607FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
 		505C54C81E06822800607FA3 /* HeartReateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartReateController.swift; sourceTree = "<group>"; };
 		50AC6E4A1E7444F700374C0C /* Xin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xin.entitlements; sourceTree = "<group>"; };
 		50AC6E4C1E7444F700374C0C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
+		B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50AC6E4D1E7444F700374C0C /* HealthKit.framework in Frameworks */,
+				A38199CE9151C40D0AD4C226 /* Pods_Xin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				50AC6E4C1E7444F700374C0C /* HealthKit.framework */,
+				B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

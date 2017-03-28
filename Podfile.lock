@@ -1,12 +1,12 @@
 PODS:
-  - SwiftWebSocket (2.6.5)
+  - Starscream (2.0.3)
 
 DEPENDENCIES:
-  - SwiftWebSocket
+  - Starscream (~> 2.0.3)
 
 SPEC CHECKSUMS:
-  SwiftWebSocket: 1ef8a0efb023544643bdf480c1ec4a62b204f293
+  Starscream: 3fdd5c277e57cca6b5c406d274e3f34a7c88f2ce
 
-PODFILE CHECKSUM: 311f6517d1f006b8d98b75a9a4b2c5ea45f51ef6
+PODFILE CHECKSUM: 2e1a97aceed6b968f2d5d55b087465e39a57bb33
 
 COCOAPODS: 1.2.0
