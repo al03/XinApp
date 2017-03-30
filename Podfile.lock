@@ -1,4 +1,14 @@
 PODS:
+  - CocoaAsyncSocket (7.6.0)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (3.1.0):
+    - CocoaLumberjack/Default (= 3.1.0)
+    - CocoaLumberjack/Extensions (= 3.1.0)
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Extensions (3.1.0):
+    - CocoaLumberjack/Default
   - PocketSocket (1.0.1):
     - PocketSocket/Client (= 1.0.1)
     - PocketSocket/Core (= 1.0.1)
@@ -11,13 +21,17 @@ PODS:
   - Starscream (2.0.3)
 
 DEPENDENCIES:
+  - CocoaHTTPServer
   - PocketSocket
   - Starscream (~> 2.0.3)
 
 SPEC CHECKSUMS:
+  CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
   Starscream: 3fdd5c277e57cca6b5c406d274e3f34a7c88f2ce
 
-PODFILE CHECKSUM: ee7c98cb1394ad26327db7a96595c84f49098aa0
+PODFILE CHECKSUM: eafb65cb35e2a1866e4a79a61b9718509cde21d6
 
 COCOAPODS: 1.2.0
