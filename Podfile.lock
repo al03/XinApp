@@ -1,12 +1,23 @@
 PODS:
+  - PocketSocket (1.0.1):
+    - PocketSocket/Client (= 1.0.1)
+    - PocketSocket/Core (= 1.0.1)
+    - PocketSocket/Server (= 1.0.1)
+  - PocketSocket/Client (1.0.1):
+    - PocketSocket/Core
+  - PocketSocket/Core (1.0.1)
+  - PocketSocket/Server (1.0.1):
+    - PocketSocket/Client
   - Starscream (2.0.3)
 
 DEPENDENCIES:
+  - PocketSocket
   - Starscream (~> 2.0.3)
 
 SPEC CHECKSUMS:
+  PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
   Starscream: 3fdd5c277e57cca6b5c406d274e3f34a7c88f2ce
 
-PODFILE CHECKSUM: 2e1a97aceed6b968f2d5d55b087465e39a57bb33
+PODFILE CHECKSUM: ee7c98cb1394ad26327db7a96595c84f49098aa0
 
 COCOAPODS: 1.2.0
