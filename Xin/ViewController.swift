@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
+    
+    let connet = Connect("ws://192.168.36.58:8080")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Server.shared.start()
+        
+        connet.connet()
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -25,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMSG(_ sender: Any) {
-        
+        connet.send(textField.text!)
     }
 
 }

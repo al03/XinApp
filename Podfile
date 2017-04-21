@@ -4,7 +4,6 @@ use_frameworks!
 
 target "Xin" do
 	pod 'Starscream', '~> 2.0.3'
-	pod 'PocketSocket'
-	pod 'CocoaHTTPServer'
+#	pod 'CocoaHTTPServer'
 end
 
