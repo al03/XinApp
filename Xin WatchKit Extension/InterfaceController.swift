@@ -14,6 +14,7 @@ import HealthKit
 class InterfaceController: WKInterfaceController {
     @IBOutlet var rateLabel: WKInterfaceLabel!
 
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -37,6 +38,11 @@ class InterfaceController: WKInterfaceController {
 
         
         // Configure interface objects here.
+    }
+    
+    @IBAction func startClick() {
+        
+        
     }
     
     override func willActivate() {
