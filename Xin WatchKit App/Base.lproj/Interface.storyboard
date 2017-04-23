@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aub-YC-e25">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,51 +10,55 @@
     </dependencies>
     <scenes>
         <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <scene sceneID="3DO-i9-x0k">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Xin_WatchKit_App" customModuleProvider="target">
+                <controller id="aub-YC-e25" customClass="InterfaceController" customModule="Xin_WatchKit_Extension">
                     <items>
                         <label width="136" height="30" alignment="left" text="Label" textAlignment="center" id="szp-JO-lRV"/>
-                        <button width="1" height="104" alignment="left" title="Start" id="ymY-RU-HH0">
+                        <label width="136" alignment="left" text="Label" id="T0Y-l6-dVP"/>
+                        <label width="136" alignment="left" text="Label" id="2Aj-oI-ClI"/>
+                        <button width="1" height="59" alignment="left" title="Start" id="ymY-RU-HH0">
                             <connections>
-                                <action selector="startClick" destination="AgC-eL-Hgc" id="Srz-la-KCN"/>
+                                <action selector="startClick" destination="aub-YC-e25" id="PF0-Ug-orH"/>
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="MZu-ps-nop">
+                        <items>
+                            <menuItem title="Pause" id="RBS-B7-deY"/>
+                            <menuItem title="Stop" id="IEg-ay-qGi"/>
+                        </items>
+                    </menu>
                     <connections>
-                        <outlet property="rateLabel" destination="szp-JO-lRV" id="xnA-kM-Wtz"/>
+                        <outlet property="backhandCountLabel" destination="T0Y-l6-dVP" id="LHO-dd-YRj"/>
+                        <outlet property="forehandCountLabel" destination="2Aj-oI-ClI" id="IxH-eb-TRW"/>
+                        <outlet property="startBtn" destination="ymY-RU-HH0" id="lhU-ac-098"/>
+                        <outlet property="titleLabel" destination="szp-JO-lRV" id="WVS-xn-KCk"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Heart Reate Controller-->
-        <scene sceneID="P2I-eU-1Kz">
-            <objects>
-                <controller id="1v2-Qk-Apv" customClass="HeartReateController" customModule="Xin_WatchKit_Extension"/>
-            </objects>
-            <point key="canvasLocation" x="420" y="345"/>
+            <point key="canvasLocation" x="219" y="344"/>
         </scene>
         <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <scene sceneID="Pfx-5w-mdp">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <notificationController id="Jcb-1Y-gfg">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Alert Label" id="Ijr-OV-RXr"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="7EY-LK-RiM"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="notificationAlertLabel" destination="Ijr-OV-RXr" id="or1-ST-2qM"/>
+                        <segue destination="60w-l0-Sab" kind="relationship" relationship="dynamicNotificationInterface" id="bGj-qY-hUa"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
         <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <scene sceneID="Z0m-SQ-XPI">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Xin_WatchKit_App" customModuleProvider="target"/>
+                <controller id="60w-l0-Sab" customClass="NotificationController" customModule="Xin_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

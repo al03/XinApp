@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500649C11E8FCB3A00A1817C /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500649C01E8FCB3A00A1817C /* WorkoutManager.swift */; };
+		500649C31E8FCBEE00A1817C /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500649C21E8FCBEE00A1817C /* MotionManager.swift */; };
+		50085F121E93B20F00BD26FB /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50085F111E93B20F00BD26FB /* RunningBuffer.swift */; };
+		50522F331EAB5140007808FB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50522F321EAB5140007808FB /* HealthKit.framework */; };
+		50522F361EAB5165007808FB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50522F351EAB5165007808FB /* HealthKit.framework */; };
 		505C546F1E059BAD00607FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C546E1E059BAD00607FA3 /* AppDelegate.swift */; };
 		505C54711E059BAD00607FA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54701E059BAD00607FA3 /* ViewController.swift */; };
 		505C54741E059BAD00607FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505C54721E059BAD00607FA3 /* Main.storyboard */; };
@@ -23,7 +28,6 @@
 		505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54AD1E059BAE00607FA3 /* NotificationController.swift */; };
 		505C54B01E059BAE00607FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505C54AF1E059BAE00607FA3 /* Assets.xcassets */; };
 		505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54C81E06822800607FA3 /* HeartReateController.swift */; };
-		50AC6E4D1E7444F700374C0C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC6E4C1E7444F700374C0C /* HealthKit.framework */; };
 		50AFB8181EA9F2CA00E71360 /* Connet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB8171EA9F2CA00E71360 /* Connet.swift */; };
 		A38199CE9151C40D0AD4C226 /* Pods_Xin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +90,13 @@
 
 /* Begin PBXFileReference section */
 		35C1E16DAC4843E3E7B97DD9 /* Pods-Xin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.release.xcconfig"; sourceTree = "<group>"; };
+		500649C01E8FCB3A00A1817C /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		500649C21E8FCBEE00A1817C /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		50085F111E93B20F00BD26FB /* RunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+		501E656D1E93BACA006D34A9 /* SwingWatchExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SwingWatchExtension.entitlements; sourceTree = "<group>"; };
+		50522F321EAB5140007808FB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		50522F341EAB5165007808FB /* Xin WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Xin WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		50522F351EAB5165007808FB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		505C546B1E059BAD00607FA3 /* Xin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505C546E1E059BAD00607FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505C54701E059BAD00607FA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,9 +122,7 @@
 		505C54AF1E059BAE00607FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505C54B11E059BAE00607FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505C54C81E06822800607FA3 /* HeartReateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartReateController.swift; sourceTree = "<group>"; };
-		507E54BD1E8E617C0086A98A /* Xin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xin-Bridging-Header.h"; sourceTree = "<group>"; };
 		50AC6E4A1E7444F700374C0C /* Xin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xin.entitlements; sourceTree = "<group>"; };
-		50AC6E4C1E7444F700374C0C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		50AFB8171EA9F2CA00E71360 /* Connet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connet.swift; sourceTree = "<group>"; };
 		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
 		B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50AC6E4D1E7444F700374C0C /* HealthKit.framework in Frameworks */,
 				A38199CE9151C40D0AD4C226 /* Pods_Xin.framework in Frameworks */,
+				50522F331EAB5140007808FB /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50522F361EAB5165007808FB /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +206,8 @@
 				505C54721E059BAD00607FA3 /* Main.storyboard */,
 				505C54751E059BAD00607FA3 /* Assets.xcassets */,
 				505C54771E059BAD00607FA3 /* LaunchScreen.storyboard */,
+				501E656D1E93BACA006D34A9 /* SwingWatchExtension.entitlements */,
 				505C547A1E059BAD00607FA3 /* Info.plist */,
-				507E54BD1E8E617C0086A98A /* Xin-Bridging-Header.h */,
 			);
 			path = Xin;
 			sourceTree = "<group>";
@@ -233,9 +243,13 @@
 		505C54A61E059BAE00607FA3 /* Xin WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				505C54A91E059BAE00607FA3 /* InterfaceController.swift */,
-				505C54C81E06822800607FA3 /* HeartReateController.swift */,
+				50522F341EAB5165007808FB /* Xin WatchKit Extension.entitlements */,
 				505C54AB1E059BAE00607FA3 /* ExtensionDelegate.swift */,
+				505C54A91E059BAE00607FA3 /* InterfaceController.swift */,
+				50085F111E93B20F00BD26FB /* RunningBuffer.swift */,
+				500649C01E8FCB3A00A1817C /* WorkoutManager.swift */,
+				500649C21E8FCBEE00A1817C /* MotionManager.swift */,
+				505C54C81E06822800607FA3 /* HeartReateController.swift */,
 				505C54AD1E059BAE00607FA3 /* NotificationController.swift */,
 				505C54AF1E059BAE00607FA3 /* Assets.xcassets */,
 				505C54B11E059BAE00607FA3 /* Info.plist */,
@@ -264,7 +278,8 @@
 		F69CDC7F1F1A512ACF0E419E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50AC6E4C1E7444F700374C0C /* HealthKit.framework */,
+				50522F351EAB5165007808FB /* HealthKit.framework */,
+				50522F321EAB5140007808FB /* HealthKit.framework */,
 				B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */,
 			);
 			name = Frameworks;
@@ -420,6 +435,9 @@
 							com.apple.BackgroundModes.watchos.extension = {
 								enabled = 1;
 							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -533,7 +551,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -570,8 +588,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */,
+				500649C31E8FCBEE00A1817C /* MotionManager.swift in Sources */,
 				505C54AC1E059BAE00607FA3 /* ExtensionDelegate.swift in Sources */,
+				500649C11E8FCB3A00A1817C /* WorkoutManager.swift in Sources */,
 				505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */,
+				50085F121E93B20F00BD26FB /* RunningBuffer.swift in Sources */,
 				505C54AA1E059BAE00607FA3 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Xin WatchKit Extension/Xin WatchKit Extension.entitlements";
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				INFOPLIST_FILE = "Xin WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -743,6 +765,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Xin WatchKit Extension/Xin WatchKit Extension.entitlements";
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				INFOPLIST_FILE = "Xin WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -804,7 +827,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Xin/Xin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -822,7 +845,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Xin/Xin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
