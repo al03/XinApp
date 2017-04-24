@@ -125,7 +125,9 @@
 		50AC6E4A1E7444F700374C0C /* Xin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xin.entitlements; sourceTree = "<group>"; };
 		50AFB8171EA9F2CA00E71360 /* Connet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connet.swift; sourceTree = "<group>"; };
 		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
+		9FF38853E20A22525F202B11 /* Pods_Xin_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD2A5D6B329A9797286D238 /* Pods_Xin_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,8 @@
 				50522F351EAB5165007808FB /* HealthKit.framework */,
 				50522F321EAB5140007808FB /* HealthKit.framework */,
 				B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */,
+				9FF38853E20A22525F202B11 /* Pods_Xin_WatchKit_App.framework */,
+				FAD2A5D6B329A9797286D238 /* Pods_Xin_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -551,7 +555,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

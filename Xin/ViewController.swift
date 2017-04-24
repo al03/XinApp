@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
-    let connet = Connect("ws://192.168.36.58:8080")
+    let connet = Connect("ws://192.168.1.28:8080")
 
     override func viewDidLoad() {
         super.viewDidLoad()

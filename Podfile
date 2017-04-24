@@ -5,5 +5,5 @@ use_frameworks!
 target "Xin" do
 	pod 'Starscream', '~> 2.0.3'
 #	pod 'CocoaHTTPServer'
+#   pod 'MMWormhole', '~> 2.0.0'
 end
-
