@@ -7,8 +7,25 @@
 //
 
 import WatchKit
+import WatchConnectivity
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    
+    var wcBackgroundTasks: [WKWatchConnectivityRefreshBackgroundTask]
+    
+    override init() {
+        wcBackgroundTasks = []
+        super.init()
+        
+        let defaultSession = WCSession.default()
+        defaultSession.delegate = WatchConnectivityManager.sharedConnectivityManager
+        
+        
+        defaultSession.addObserver(self, forKeyPath: "activationState", options: [], context: nil)
+        defaultSession.addObserver(self, forKeyPath: "hasContentPendig", options: [], context: nil)
+        
+        defaultSession.activate()
+    }
 
     func applicationDidFinishLaunching() {
         print("launch")
@@ -47,5 +64,25 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             }
         }
     }
+    
+    
 
+}
+
+
+
+extension ExtensionDelegate {
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        DispatchQueue.main.async {
+            
+        }
+    }
+    
+    func completedAllTaskIfReady() {
+        let session = WCSession.default()
+        if session.activationState == .activated && !session.hasContentPending {
+            wcBackgroundTasks.forEach { $0.setTaskCompleted() }
+            wcBackgroundTasks.removeAll()
+        }
+    }
 }

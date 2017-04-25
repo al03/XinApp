@@ -29,6 +29,8 @@
 		505C54B01E059BAE00607FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505C54AF1E059BAE00607FA3 /* Assets.xcassets */; };
 		505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54C81E06822800607FA3 /* HeartReateController.swift */; };
 		50AFB8181EA9F2CA00E71360 /* Connet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB8171EA9F2CA00E71360 /* Connet.swift */; };
+		50AFB81B1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */; };
+		50AFB81C1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */; };
 		A38199CE9151C40D0AD4C226 /* Pods_Xin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,7 @@
 		505C54C81E06822800607FA3 /* HeartReateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartReateController.swift; sourceTree = "<group>"; };
 		50AC6E4A1E7444F700374C0C /* Xin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xin.entitlements; sourceTree = "<group>"; };
 		50AFB8171EA9F2CA00E71360 /* Connet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connet.swift; sourceTree = "<group>"; };
+		50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
 		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
 		9FF38853E20A22525F202B11 /* Pods_Xin_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,7 @@
 		505C54621E059BAD00607FA3 = {
 			isa = PBXGroup;
 			children = (
+				50AFB8191EAF2B6000E71360 /* Shared */,
 				505C546D1E059BAD00607FA3 /* Xin */,
 				505C54821E059BAE00607FA3 /* XinTests */,
 				505C548D1E059BAE00607FA3 /* XinUITests */,
@@ -266,6 +270,14 @@
 				505C54A81E059BAE00607FA3 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50AFB8191EAF2B6000E71360 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		ED97879CC0C8BDE6FF4369E8 /* Pods */ = {
@@ -427,7 +439,7 @@
 								enabled = 0;
 							};
 							com.apple.BackgroundModes.watchos.app = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -567,6 +579,7 @@
 			files = (
 				505C54711E059BAD00607FA3 /* ViewController.swift in Sources */,
 				50AFB8181EA9F2CA00E71360 /* Connet.swift in Sources */,
+				50AFB81B1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */,
 				505C546F1E059BAD00607FA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +606,7 @@
 			files = (
 				505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */,
 				500649C31E8FCBEE00A1817C /* MotionManager.swift in Sources */,
+				50AFB81C1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */,
 				505C54AC1E059BAE00607FA3 /* ExtensionDelegate.swift in Sources */,
 				500649C11E8FCB3A00A1817C /* WorkoutManager.swift in Sources */,
 				505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */,

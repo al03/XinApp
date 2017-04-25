@@ -23,7 +23,7 @@ class WorkoutManager: MotionManagerDelegate {
     var isstart = false
     
     
-    var heartRateUpdate:((String) -> Void?)? = nil
+    var heartRateUpdate:((String) -> Void)? = nil
     
     
     weak var delegate: WorkoutManagerDelegate?

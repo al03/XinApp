@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
     @IBOutlet weak var textField: UITextField!
     
-    let connet = Connect("ws://192.168.1.28:8080")
-
+    var connet:Connect?
+    @IBOutlet weak var rateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        connet.connet()
-        
+        WatchConnectivityManager.sharedConnectivityManager.delegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -28,8 +28,44 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func sendMSG(_ sender: Any) {
-        connet.send(textField.text!)
+    @IBAction func connectClick(_ sender: Any) {
+        
+        guard let address = textField.text else {
+            
+            let action = UIAlertAction(title: "input server address", style: .default, handler: nil)
+            let alert = UIAlertController()
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
+        let wsAddress = "ws://\(address)"
+        
+        connet = Connect(wsAddress)
+        
+    }
+    
+    @IBAction func testConnect(_ sender: Any) {
+       connet?.send("@@@@@@") 
+    }
+    
+    func creatConnectivity() {
+        
+        let defaultSession = WCSession.default()
+        defaultSession.delegate = WatchConnectivityManager.sharedConnectivityManager
+        defaultSession.activate()
+        
+    }
+    
+    
+    func watchConnectivityManager(_ manager: WatchConnectivityManager, msg: String) {
+        DispatchQueue.main.async {
+           self.rateLabel.text = msg
+        }
+        connet?.send(msg)
+        
     }
 
 }

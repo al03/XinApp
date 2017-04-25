@@ -11,7 +11,7 @@ import Foundation
 import HealthKit
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController, WorkoutManagerDelegate {
+class InterfaceController: WKInterfaceController, WorkoutManagerDelegate, WatchConnectivityManagerWatchDelegate {
     // MARK: Properties
     
     let workoutManager = WorkoutManager()
@@ -62,6 +62,7 @@ class InterfaceController: WKInterfaceController, WorkoutManagerDelegate {
         
         workoutManager.heartRateUpdate = { rate in
             self.backhandCountLabel.setText(rate)
+            self.sendConnect(string: rate)
         }
         
         if isSuc || workoutManager.isstart {
@@ -103,9 +104,20 @@ class InterfaceController: WKInterfaceController, WorkoutManagerDelegate {
     }
     
     
+    func sendConnect(string: String) {
+        let session = WCSession.default()
+        do {
+            try session.updateApplicationContext(["rate":string])
+        }
+        catch let error as Error{
+            print("\(error.localizedDescription)")
+        }
+    }
     
     
-    
+    func watchConnectivityManager(_ manager: WatchConnectivityManager, msg: String) {
+        
+    }
     
     
     
