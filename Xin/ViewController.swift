@@ -18,6 +18,7 @@ class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textField.text = "192.168.36.58:8080"
         WatchConnectivityManager.sharedConnectivityManager.delegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,8 +44,12 @@ class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
         
         let wsAddress = "ws://\(address)"
         
-        connet = Connect(wsAddress)
+        if (connet != nil) {
+            connet?.disconnect()
+        }
         
+        connet = Connect(wsAddress)
+        connet?.connet()
     }
     
     @IBAction func testConnect(_ sender: Any) {

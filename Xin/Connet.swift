@@ -27,6 +27,12 @@ class Connect: WebSocketDelegate {
         socket.connect()
     }
     
+    open func disconnect() {
+        if socket.isConnected {
+            socket.disconnect()
+        }
+    }
+    
     open func send(_ msg:String){
         socket.write(string: msg)
     }
