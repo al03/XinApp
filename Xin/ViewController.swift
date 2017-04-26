@@ -12,7 +12,7 @@ import WatchConnectivity
 class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
     @IBOutlet weak var textField: UITextField!
     
-    var connet:Connect?
+    var connect:Connect?
     @IBOutlet weak var rateLabel: UILabel!
     
     override func viewDidLoad() {
@@ -44,16 +44,16 @@ class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
         
         let wsAddress = "ws://\(address)"
         
-        if (connet != nil) {
-            connet?.disconnect()
+        if (connect != nil) {
+            connect?.disconnect()
         }
         
-        connet = Connect(wsAddress)
-        connet?.connet()
+        connect = Connect(wsAddress)
+        connect?.connect()
     }
     
     @IBAction func testConnect(_ sender: Any) {
-       connet?.send("@@@@@@") 
+       connect?.send("@@@@@@")
     }
     
     func creatConnectivity() {
@@ -69,7 +69,7 @@ class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
         DispatchQueue.main.async {
            self.rateLabel.text = msg
         }
-        connet?.send(msg)
+        connect?.send(msg)
         
     }
 

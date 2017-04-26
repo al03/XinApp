@@ -25,8 +25,8 @@
                     </items>
                     <menu key="menu" id="MZu-ps-nop">
                         <items>
-                            <menuItem title="Pause" id="RBS-B7-deY"/>
-                            <menuItem title="Stop" id="IEg-ay-qGi"/>
+                            <menuItem title="Pause" icon="pause" id="RBS-B7-deY"/>
+                            <menuItem title="Stop" icon="trash" id="IEg-ay-qGi"/>
                         </items>
                     </menu>
                     <connections>

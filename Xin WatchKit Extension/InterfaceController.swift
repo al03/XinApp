@@ -109,8 +109,10 @@ class InterfaceController: WKInterfaceController, WorkoutManagerDelegate, WatchC
         do {
             try session.updateApplicationContext(["rate":string])
         }
-        catch let error as Error{
+        catch let error {
             print("\(error.localizedDescription)")
+        } catch {
+            print("session failed")
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  Connet.swift
+//  Connect.swift
 //  Xin
 //
 //  Created by Albert on 21/04/2017.
@@ -23,7 +23,7 @@ class Connect: WebSocketDelegate {
         socket.delegate = self
     }
     
-    open func connet (){
+    open func connect (){
         socket.connect()
     }
     

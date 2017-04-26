@@ -28,7 +28,7 @@
 		505C54AE1E059BAE00607FA3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54AD1E059BAE00607FA3 /* NotificationController.swift */; };
 		505C54B01E059BAE00607FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505C54AF1E059BAE00607FA3 /* Assets.xcassets */; };
 		505C54C91E06822800607FA3 /* HeartReateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C54C81E06822800607FA3 /* HeartReateController.swift */; };
-		50AFB8181EA9F2CA00E71360 /* Connet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB8171EA9F2CA00E71360 /* Connet.swift */; };
+		50AFB8181EA9F2CA00E71360 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB8171EA9F2CA00E71360 /* Connect.swift */; };
 		50AFB81B1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */; };
 		50AFB81C1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */; };
 		A38199CE9151C40D0AD4C226 /* Pods_Xin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35CAAC0650CDFDECDE69B44 /* Pods_Xin.framework */; };
@@ -125,7 +125,7 @@
 		505C54B11E059BAE00607FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505C54C81E06822800607FA3 /* HeartReateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartReateController.swift; sourceTree = "<group>"; };
 		50AC6E4A1E7444F700374C0C /* Xin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xin.entitlements; sourceTree = "<group>"; };
-		50AFB8171EA9F2CA00E71360 /* Connet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connet.swift; sourceTree = "<group>"; };
+		50AFB8171EA9F2CA00E71360 /* Connect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
 		50AFB81A1EAF2B7C00E71360 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
 		7E86B605D9250A760432A28E /* Pods-Xin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xin/Pods-Xin.debug.xcconfig"; sourceTree = "<group>"; };
 		9FF38853E20A22525F202B11 /* Pods_Xin_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xin_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,7 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				50AC6E4A1E7444F700374C0C /* Xin.entitlements */,
-				50AFB8171EA9F2CA00E71360 /* Connet.swift */,
+				50AFB8171EA9F2CA00E71360 /* Connect.swift */,
 				505C546E1E059BAD00607FA3 /* AppDelegate.swift */,
 				505C54701E059BAD00607FA3 /* ViewController.swift */,
 				505C54721E059BAD00607FA3 /* Main.storyboard */,
@@ -315,6 +315,7 @@
 				505C54BB1E059BAE00607FA3 /* Embed Watch Content */,
 				3F18042D7CDF93FD605A582B /* [CP] Embed Pods Frameworks */,
 				08C0BA6D93C114055953C697 /* [CP] Copy Pods Resources */,
+				508DABF61EB0713E00F31F03 /* Build number auto increment */,
 			);
 			buildRules = (
 			);
@@ -555,6 +556,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xin/Pods-Xin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		508DABF61EB0713E00F31F03 /* Build number auto increment */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build number auto increment";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
 		63CED783969E7AA2EEA1D0F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,7 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505C54711E059BAD00607FA3 /* ViewController.swift in Sources */,
-				50AFB8181EA9F2CA00E71360 /* Connet.swift in Sources */,
+				50AFB8181EA9F2CA00E71360 /* Connect.swift in Sources */,
 				50AFB81B1EAF2B7C00E71360 /* WatchConnectivityManager.swift in Sources */,
 				505C546F1E059BAD00607FA3 /* AppDelegate.swift in Sources */,
 			);
