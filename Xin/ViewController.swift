@@ -53,7 +53,8 @@ class ViewController: UIViewController, WatchConnectivityManagerPhoneDelegate {
     }
     
     @IBAction func testConnect(_ sender: Any) {
-       connect?.send("@@@@@@")
+        let random = Int(arc4random_uniform(60)) + 60
+       connect?.send("\(random)")
     }
     
     func creatConnectivity() {
