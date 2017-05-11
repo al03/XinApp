@@ -22,8 +22,7 @@ class InterfaceController: WKInterfaceController, WorkoutManagerDelegate, WatchC
     // MARK: Interface Properties
     
     @IBOutlet weak var titleLabel: WKInterfaceLabel!
-    @IBOutlet weak var backhandCountLabel: WKInterfaceLabel!
-    @IBOutlet weak var forehandCountLabel: WKInterfaceLabel!
+    @IBOutlet weak var heartRateLabel: WKInterfaceLabel!
     @IBOutlet var startBtn: WKInterfaceButton!
     
     // MARK: Initialization
@@ -61,11 +60,11 @@ class InterfaceController: WKInterfaceController, WorkoutManagerDelegate, WatchC
         let isSuc = workoutManager.startWorkout()
         
         workoutManager.heartRateUpdate = { rate in
-            self.backhandCountLabel.setText(rate)
+            self.heartRateLabel.setText(rate)
             self.sendConnect(string: rate)
         }
         
-        if isSuc || workoutManager.isstart {
+        if isSuc && workoutManager.isstart {
             startBtn.setTitle("stop")
         }
     }
@@ -98,8 +97,7 @@ class InterfaceController: WKInterfaceController, WorkoutManagerDelegate, WatchC
     
     func updateLabels() {
         if active {
-            forehandCountLabel.setText("\(forehandCount)")
-//            backhandCountLabel.setText("\(backhandCount)")
+            heartRateLabel.setText("\(forehandCount)")
         }
     }
     

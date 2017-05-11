@@ -784,7 +784,7 @@
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				INFOPLIST_FILE = "Xin WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.al03.Xin.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -802,7 +802,7 @@
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				INFOPLIST_FILE = "Xin WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.al03.Xin.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -820,7 +820,7 @@
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				IBSC_MODULE = Xin_WatchKit_Extension;
 				INFOPLIST_FILE = "Xin WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.al03.Xin.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -838,7 +838,7 @@
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				IBSC_MODULE = Xin_WatchKit_Extension;
 				INFOPLIST_FILE = "Xin WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.al03.Xin.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -858,7 +858,7 @@
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				INFOPLIST_FILE = Xin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.al03.Xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -876,7 +876,7 @@
 				DEVELOPMENT_TEAM = KCUGBDU8HN;
 				INFOPLIST_FILE = Xin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.al03..Xin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.al03.Xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;

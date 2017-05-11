@@ -14,9 +14,8 @@
             <objects>
                 <controller id="aub-YC-e25" customClass="InterfaceController" customModule="Xin_WatchKit_Extension">
                     <items>
-                        <label width="136" height="30" alignment="left" text="Label" textAlignment="center" id="szp-JO-lRV"/>
-                        <label width="136" alignment="left" text="Label" id="T0Y-l6-dVP"/>
-                        <label width="136" alignment="left" text="Label" id="2Aj-oI-ClI"/>
+                        <label width="136" height="30" alignment="left" textAlignment="center" id="szp-JO-lRV"/>
+                        <label width="136" height="34" alignment="left" textAlignment="center" id="2Aj-oI-ClI"/>
                         <button width="1" height="59" alignment="left" title="Start" id="ymY-RU-HH0">
                             <connections>
                                 <action selector="startClick" destination="aub-YC-e25" id="PF0-Ug-orH"/>
@@ -30,14 +29,13 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="backhandCountLabel" destination="T0Y-l6-dVP" id="LHO-dd-YRj"/>
-                        <outlet property="forehandCountLabel" destination="2Aj-oI-ClI" id="IxH-eb-TRW"/>
+                        <outlet property="heartRateLabel" destination="2Aj-oI-ClI" id="DaD-Ro-SFj"/>
                         <outlet property="startBtn" destination="ymY-RU-HH0" id="lhU-ac-098"/>
                         <outlet property="titleLabel" destination="szp-JO-lRV" id="WVS-xn-KCk"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219" y="344"/>
+            <point key="canvasLocation" x="219" y="321"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="Pfx-5w-mdp">

@@ -44,7 +44,6 @@ class WorkoutManager: MotionManagerDelegate {
             return true
         }
         
-        isstart = true
         
         // Configure the workout session.
         let workoutConfiguration = HKWorkoutConfiguration()
@@ -66,7 +65,13 @@ class WorkoutManager: MotionManagerDelegate {
         let distance = HKQuantity(unit: HKUnit.mile(),
                                   doubleValue: 3.2)
         
-        let run = HKWorkout(activityType: .running, start: Date(), end: Date.distantFuture, duration: 60, totalEnergyBurned: energyBurned, totalDistance: distance, metadata: nil)
+        let run = HKWorkout(activityType: .running,
+                            start: Date(),
+                            end: Date.distantFuture,
+                            duration: 60,
+                            totalEnergyBurned: energyBurned,
+                            totalDistance: distance,
+                            metadata: nil)
         
         
         var healthKitTypesToRead = Set<HKObjectType>()
@@ -83,7 +88,8 @@ class WorkoutManager: MotionManagerDelegate {
         
         if healthStore.authorizationStatus(for: workoutType) == HKAuthorizationStatus.notDetermined  {
             
-            healthStore.requestAuthorization(toShare: healthKitTypesToWrite, read: healthKitTypesToRead) { (success, error) -> Void in
+            healthStore.requestAuthorization(toShare: healthKitTypesToWrite,
+                                             read: healthKitTypesToRead) { (success, error) -> Void in
                 if success {
                     self.startWorkout()
                 }
@@ -156,6 +162,7 @@ class WorkoutManager: MotionManagerDelegate {
         healthStore.start(session!)
         motionManager.startUpdates()
         
+        isstart = true
         
         getTodaysHeartRates()
         

@@ -39,10 +39,12 @@ class Connect: WebSocketDelegate {
     
     func websocketDidConnect(socket: WebSocket) {
         print("websocket is connected")
+        UIApplication.shared.isIdleTimerDisabled = true;
     }
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
         print("websocket is Disconnect")
+        UIApplication.shared.isIdleTimerDisabled = false;
     }
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
